@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-darker text-muted font-sans antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0705;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b7320;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8960f;
+}
+
+.card-frame {
+  position: relative;
+  border: 1px solid theme("colors.foil.dim");
+  border-radius: 6px;
+  background: theme("colors.card.bg");
+  box-shadow:
+    0 0 0 1px theme("colors.dark"),
+    0 0 0 3px theme("colors.card.border"),
+    0 0 0 4px theme("colors.foil.dim"),
+    0 0 0 6px theme("colors.card.bg"),
+    0 4px 24px rgba(0, 0, 0, 0.5);
+  padding: 6px;
+}
+
+.card-frame::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px solid theme("colors.card.border");
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.card-frame-inner {
+  position: relative;
+  border: 1px solid theme("colors.card.border");
+  border-radius: 3px;
+  padding: 18px 16px 14px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.04) 0%, transparent 60%),
+    theme("colors.card.bg");
+  overflow: hidden;
+}
+
+.card-frame-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  width: 12px;
+  height: 12px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.attribute-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid theme("colors.foil.dim");
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  background: radial-gradient(circle at 40% 40%, rgba(212, 175, 55, 0.3), transparent);
+  color: theme("colors.foil.DEFAULT");
+}
+
+.card-back-pattern {
+  background-color: theme("colors.darker");
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(192, 160, 224, 0.03) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.015'%3E%3Cpath d='M0 20 L20 0 L40 20 L20 40z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    theme("colors.foil.dim") 20%,
+    theme("colors.foil.DEFAULT") 50%,
+    theme("colors.foil.dim") 80%,
+    transparent 100%
+  );
+  opacity: 0.4;
+}
+
+.card-attribute {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid theme("colors.foil.dim");
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: theme("colors.foil.DEFAULT");
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.card-set-code {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: theme("colors.foil.dim");
+}
