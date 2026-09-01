@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Projects from "./components/Projects"
+import Music from "./components/Music"
 import About from "./components/About"
 import HireMe from "./components/HireMe"
 import Contact from "./components/Contact"
@@ -13,6 +14,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
+        <Music />
         <About />
         <HireMe />
         <Contact />

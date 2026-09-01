@@ -20,17 +20,6 @@ export default function Contact() {
             Email
           </a>
           <a
-            href="https://bsky.app/profile/santi.codes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-primary/30 px-5 py-2.5 text-sm font-medium text-white hover:border-primary hover:text-primary transition-colors"
-          >
-            <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 568 501">
-              <path d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.209C491.866-1.611 568-28.906 568 57.947c0 17.346-9.945 145.713-15.778 166.555-20.275 72.453-94.155 90.933-159.875 79.748C507.222 323.8 536.444 388.56 473.644 453.32c-119.86 123.992-172.272-70.75-185.701-162.342-2.115-14.424-3.108-21.142-3.943-15.428-.835 5.714-1.828 12.432-3.943 26.856-13.428 91.592-65.841 286.334-185.701 162.342C31.556 388.56 60.778 323.8 175.653 304.25c-65.72 11.185-139.6-7.295-159.875-79.748C9.945 203.66 0 75.293 0 57.947 0-28.906 76.134-1.611 123.121 33.664Z" />
-            </svg>
-            Bluesky
-          </a>
-          <a
             href="https://github.com/SantiagoRivera92"
             target="_blank"
             rel="noopener noreferrer"

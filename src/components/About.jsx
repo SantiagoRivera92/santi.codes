@@ -15,7 +15,8 @@ export default function About() {
           <p className="text-muted leading-relaxed">
             Outside of coding, I am deeply involved in the Yu-Gi-Oh! community, building tools
             that help thousands of players discover cards, build decks, and compete in tournaments.
-            I am also a Linux enthusiast, and I enjoy tinkering with new technologies and frameworks.
+            I also make music with Strudel (strudel.cc), and I am a Linux
+            enthusiast who enjoys tinkering with new technologies and frameworks.
           </p>
         </div>
         <div>
@@ -40,7 +41,7 @@ export default function About() {
               },
               {
                 label: "Tools",
-                items: ["Git", "Linux", "Discord Bots", "Google Play Console"],
+                items: ["Git", "Linux", "Discord Bots", "Google Play Console", "Strudel"],
               },
             ].map((group) => (
               <div key={group.label}>

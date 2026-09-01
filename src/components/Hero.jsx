@@ -14,7 +14,7 @@ export default function Hero() {
         </p>
         <p className="text-muted leading-relaxed max-w-lg mx-auto">
           Developer behind Excavate, Spellbook, and Edison Database, crafting tools
-          for the Yu-Gi-Oh! community and more.
+          for the Yu-Gi-Oh! community and more. I also write music with Strudel (strudel.cc).
         </p>
 
         <div className="mt-10 flex items-center justify-center gap-4">
